@@ -16,6 +16,6 @@ data class Task(
     val isCompleted: Boolean,
 
     @ColumnInfo(name = "category")
-    @TypeConverters()
+    @TypeConverters(TaskCategory::class)
     val category: TaskCategory
 )
